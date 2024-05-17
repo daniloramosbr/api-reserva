@@ -36,6 +36,11 @@ class Controller {
     }
   }
 
+  Test (req: Request, res: Response) {
+
+    res.send('teste')
+
+  }
 
 
 
