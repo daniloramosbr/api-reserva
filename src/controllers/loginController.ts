@@ -5,7 +5,7 @@ import generateToken from "../services/loginService";
 
 class LoginController {
 
-  async PostLogin(req: Request, res: Response) {
+  async PostLogin(req: Request, res: Response) {          //post login
     try {
       const body = req.body;
 

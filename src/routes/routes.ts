@@ -4,8 +4,11 @@ import loginController from "../controllers/loginController";
 
 const routes = Router()
 
-routes.post("/reserva", controller.PostReserve)
 routes.post("/login", loginController.PostLogin)
-routes.get("/teste", controller.Test)
+routes.post("/reserva", controller.PostReserve)
+routes.get("/reserva/:id", controller.GetReserve)
+routes.patch("/reserva/:id", controller.EditReserve)
+routes.delete("/reserva/:id", controller.DeleteReserve)
+
 
 export default routes
